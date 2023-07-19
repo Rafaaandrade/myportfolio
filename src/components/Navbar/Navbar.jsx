@@ -43,15 +43,15 @@ const Navbar = () => {
           </Box>
 
           <CustomBox>
-            <Link to="home" classname="link" smooth>
+            <Link to="home" className="link">
               Home
             </Link>
 
-            <Link to="experience" classname="link" smooth>
+            <Link to="experience" className="link">
               Experiência   
             </Link>
 
-            <Link to="about" classname="link" smooth>
+            <Link to="about" className="link">
               Sobre mim
             </Link>
           </CustomBox>

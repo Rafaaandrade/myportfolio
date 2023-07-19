@@ -23,12 +23,16 @@ const Presentation = () => {
   const CustomTitle = styled(Typography)(({ theme }) => ({
     color: "white",
     textAlign: "center",
+    "&:hover": {
+      cursor: "pointer",
+    },
     [theme.breakpoints.down("md")]: {
       fontSize: "3.5rem",
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: "2.5rem",
     },
+
   }));
 
   return (
