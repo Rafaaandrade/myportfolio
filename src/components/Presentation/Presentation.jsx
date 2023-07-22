@@ -32,7 +32,6 @@ const Presentation = () => {
     [theme.breakpoints.down("sm")]: {
       fontSize: "2.5rem",
     },
-
   }));
 
   return (
@@ -64,7 +63,12 @@ const Presentation = () => {
           sx={{ height: 300, width: 300, mt: 4, mb: 4 }}
           src={require("../../assets/images/dawg.jpg")}
         />
-        <CustomButton>Meu curriculo</CustomButton>
+        <CustomButton
+          href={require("../../assets/pdf/Rafael Andrade - Dev front.pdf")}
+          download="Curriculo - Rafael Andrade"
+        >
+          Meu curriculo
+        </CustomButton>
       </Box>
     </Box>
   );

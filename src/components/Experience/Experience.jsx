@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import { projects } from "../../constants/projects";
 import ProjectCard from "../ProjectCard/ProjectCard";
+import Skills from "../Skills/Skills";
 
 const Experience = () => {
   return (
@@ -23,9 +24,13 @@ const Experience = () => {
             description={p.description}
             tags={p.tags}
             img={p.image}
+            live={p.live}
+            source={p.source}
             />
         ))}
       </Box>
+
+      <Skills/>
     </Box>
   );
 };

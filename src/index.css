@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  /* background-color: black; */
+  background-image: url(https://static.vecteezy.com/system/resources/previews/001/987/871/original/abstract-black-stripes-diagonal-background-free-vector.jpg);  
 }
 
 code {
@@ -18,5 +19,5 @@ code {
 }
 
 .span {
- color: "rgba(0, 199, 255,255"
+ color: rgba(0, 199, 255,255)
 }

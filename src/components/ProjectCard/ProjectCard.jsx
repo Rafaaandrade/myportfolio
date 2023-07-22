@@ -3,6 +3,7 @@ import {
   Button,
   Card,
   CardActionArea,
+  CardActions,
   CardContent,
   CardMedia,
   Chip,
@@ -10,7 +11,7 @@ import {
 } from "@mui/material";
 import React from "react";
 
-const ProjectCard = ({ img, title, description, tags}) => {
+const ProjectCard = ({ img, title, description, tags, live, source}) => {
   return (
     <Card sx={{ maxWidth: 375, margin: "1rem" }}>
       <CardActionArea>
@@ -24,14 +25,14 @@ const ProjectCard = ({ img, title, description, tags}) => {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActionArea sx={{ display: "flex", flexDirection: "column" }}>
+      <CardActions sx={{ display: "flex", flexDirection: "column" }}>
         <Box
           sx={{
             width: "100%",
             display: "flex",
             justifyContent: "space-around",
             mx: "auto",
-            mb: "3",
+            mb: 3,
           }}
         >
           <Button
@@ -40,6 +41,8 @@ const ProjectCard = ({ img, title, description, tags}) => {
               backgroundColor: "rgba(0, 199, 255, 255)",
               variant: "contained",
             }}
+            href={source}
+            target="_blank"
           >
             Código
           </Button>
@@ -50,6 +53,8 @@ const ProjectCard = ({ img, title, description, tags}) => {
               backgroundColor: "rgba(0, 199, 255, 255)",
               variant: "contained",
             }}
+            href={live}
+            target="_blank"
           >
             Live
           </Button>
@@ -60,7 +65,7 @@ const ProjectCard = ({ img, title, description, tags}) => {
               <Chip label={t} key={t} variant="outlined" />
             ))}
         </Box>
-      </CardActionArea>
+      </CardActions>
     </Card>
   );
 };

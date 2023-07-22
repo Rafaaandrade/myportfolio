@@ -43,17 +43,17 @@ const Navbar = () => {
           </Box>
 
           <CustomBox>
-            <Link to="home" className="link">
+            <Link href="#home" underline="hover" className="link">
               Home
             </Link>
 
-            <Link to="experience" className="link">
-              Experiência   
+            <Link href="#experience" underline="hover" className="link">
+              Experiência
             </Link>
 
-            <Link to="about" className="link">
+            {/* <Link to="about" className="link">
               Sobre mim
-            </Link>
+            </Link> */}
           </CustomBox>
         </CustomToolbar>
       </AppBar>
