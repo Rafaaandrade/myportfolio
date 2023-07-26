@@ -16,9 +16,9 @@ const Experience = () => {
         desenvolvi até o momento
       </Typography>
 
-      <Box sx={{display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
+      <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
         {projects.map((p) => (
-            <ProjectCard
+          <ProjectCard
             key={p.id}
             title={p.title}
             description={p.description}
@@ -26,11 +26,11 @@ const Experience = () => {
             img={p.image}
             live={p.live}
             source={p.source}
-            />
+          />
         ))}
       </Box>
 
-      <Skills/>
+      <Skills />
     </Box>
   );
 };

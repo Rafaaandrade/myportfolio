@@ -74,7 +74,7 @@ const Footer = () => {
           <Email sx={{ mr: 2, color: "white" }} />
           <Typography
             component="a"
-            href="mailto:rafaandradedev@gmail.com"
+            href="mailto:rafaaandradedev@gmail.com"
             target="_blank"
             variant="body2"
             sx={{ color: "white", my: 1, textDecoration: "none" }}

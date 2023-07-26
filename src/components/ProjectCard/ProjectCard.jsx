@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import React from "react";
 
-const ProjectCard = ({ img, title, description, tags, live, source}) => {
+const ProjectCard = ({ img, title, description, tags, live, source }) => {
   return (
     <Card sx={{ maxWidth: 375, margin: "1rem" }}>
       <CardActionArea>
@@ -35,6 +35,19 @@ const ProjectCard = ({ img, title, description, tags, live, source}) => {
             mb: 3,
           }}
         >
+          {live && (
+            <Button
+              sise="small"
+              style={{
+                backgroundColor: "rgba(0, 199, 255, 255)",
+                variant: "contained",
+              }}
+              href={live}
+              target="_blank"
+            >
+              Live
+            </Button>
+          )}
           <Button
             sise="small"
             style={{
@@ -46,24 +59,21 @@ const ProjectCard = ({ img, title, description, tags, live, source}) => {
           >
             Código
           </Button>
-
-          <Button
-            sise="small"
-            style={{
-              backgroundColor: "rgba(0, 199, 255, 255)",
-              variant: "contained",
-            }}
-            href={live}
-            target="_blank"
-          >
-            Live
-          </Button>
         </Box>
 
-        <Box sx={{ width: "100%", display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "1rem", mb: 2}}>
-            {tags.map((t) => (
-              <Chip label={t} key={t} variant="outlined" />
-            ))}
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            gap: "1rem",
+            mb: 2,
+          }}
+        >
+          {tags.map((t) => (
+            <Chip label={t} key={t} variant="outlined" />
+          ))}
         </Box>
       </CardActions>
     </Card>

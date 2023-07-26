@@ -43,11 +43,11 @@ const Navbar = () => {
           </Box>
 
           <CustomBox>
-            <Link href="#home" underline="hover" className="link">
+            <Link href="#home" underline="hover" className="link" sx={{color: "white"}}>
               Home
             </Link>
 
-            <Link href="#experience" underline="hover" className="link">
+            <Link href="#experience" underline="hover" className="link" sx={{color: "white"}}>
               Experiência
             </Link>
 

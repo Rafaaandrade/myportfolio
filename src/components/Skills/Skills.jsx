@@ -21,6 +21,7 @@ const Skills = () => {
     display: "flex",
     overflowWrap: "break-word",
     flex: 1,
+    flexWrap: "wrap",
     justifyContent: "space-around",
     [theme.breakpoints.down("md")]: {
       marginLeft: "0",
